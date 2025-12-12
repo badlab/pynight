@@ -16,7 +16,7 @@
     "test_code": "output = py_night(film_script)\noutput",
     "expected": "assets/diehard_grinch_transcript.txt",
 	"required_terms": [],
-    "flag": "FLAG{YIPPIE_KI_YAY}"
+    "flag": "PY_NIGHT{DIE_HARD_SCROOGE}"
   },
   {
     "id": "diehard_002",
@@ -28,12 +28,13 @@
       "Your challenge is simple, use python to enable user-input of a password, and enter the Nakatomi Vault Password",
       "Feel free to google what that password is... but real fans already know it. ;P"
     ],
-    "example": "Fart",
+    "example": "",
     "starter_code": "def py_night():\n    # Your code here\n\n\n\n    # Don't edit beyond this point!\n    return password",
     "setup_code": "",
     "test_code": "output = py_night()\noutput",
     "expected": "akagi",
 	"required_terms": [],
-    "flag": "FLAG{RED_CASTLE}"
+    "flag": "PY_NIGHT{RED_CASTLE}"
   }
 ]
+
