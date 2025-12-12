@@ -51,12 +51,13 @@
   "starter_code": "def py_night():\n    # Your code here\n    value = 7\n    if value < 5:\n        return False\n    elif value == 7:\n        return False\n    elif value != 3 or 44 > 7:\n        return False\n    elif 18 < 7 and value != \\\"7\\\":\n        return False\n    while value >= 7 or value <= 7:\n        return False\n    result = True\n\n    # Don't edit beyond this point!\n    return result"
   "setup_code": "",
   "test_code": "output = py_night()\noutput",
-  "expected": "True",
+  "expected": "true",
   "required_terms": ["value = 7", "elif value", "elif 18", "while value", "result = True", "5", "3", "44", "return False", "18"],
-  "forbidden_terms": ["return True"],
+  "forbidden_terms": ["return True", "return true"],
   "flag": "PY_NIGHT{THEO_IS_A_LOCKSMITH}"
   }
 ]
+
 
 
 
