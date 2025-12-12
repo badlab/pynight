@@ -1,0 +1,44 @@
+:root {
+  /* Background gradient colors */
+  --radial-highlight: #cfe8ff;   /* pale highlight */
+  --linear-gradient-top: #2a0002; /* very dark red/black */
+  --linear-gradient-bottom: #4a0005; /* deep maroon */
+  --theme-sub-color: #98ff98;  /* red subtitle */
+
+  /* Header image and text */
+  --theme-image: url("../assets/nakatomi_christmas.png");
+  --theme-main: "DIE HARD";
+  --theme-sub: "Best 80's Christmas Movie?";
+  --theme-tagline: "\"John McClane: A lucky New York cop? Or a heroic Christmas LEGEND!?!?\"";
+
+  /* Optional overrides for text/colors */
+  --highlight-primary: #b30000;
+  --highlight-secondary: #ffcab3;
+}
+/* DIEHARD SNOW THEME */
+#animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1; /* behind everything */
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px; /* start above the viewport */
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}

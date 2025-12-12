@@ -1,0 +1,198 @@
+:root {
+  /* ===== THEME COLORS (OVERRIDDEN PER CHALLENGE) ===== */
+  --bg-primary: #000;
+  --bg-secondary: #111;
+  --bg-accent: #222;
+
+  --highlight-primary: #ff0000;
+  --highlight-secondary: #ffcab3;
+
+  --text-main: #ffffff;
+  --theme-sub-color: #ffffff; /* default color for subtitle */
+  --text-accent: #00ff00;
+
+  --panel-bg: rgba(0, 0, 0, 0.45);
+  --panel-border: rgba(255, 255, 255, 0.18);
+
+  /* ===== BACKGROUND EFFECTS ===== */
+  --radial-highlight: transparent;
+  --linear-gradient-top: #000;
+  --linear-gradient-bottom: #000;
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-main: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* ===== UI SIZING ===== */
+  --radius-large: 14px;
+  --radius-small: 10px;
+  --panel-padding: 16px;
+}
+
+/* =========================
+   GLOBAL LAYOUT
+========================= */
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text-main);
+  background:
+    radial-gradient(
+      80vw 40vh at 50% -10%,
+      var(--radial-highlight),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      var(--linear-gradient-top),
+      var(--linear-gradient-bottom) 60%,
+      #000 100%
+    );
+
+  min-height: 100vh;
+  padding: 24px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.fin {
+  width: 64px;
+  height: 64px;
+}
+
+.title {
+  font-weight: 900;
+  letter-spacing: .03em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: clamp(20px, 4vw, 36px);
+}
+
+.title span {
+  color: var(--highlight-primary);
+}
+
+.sub {
+  opacity: .9;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+/* =========================
+   PANELS / CARDS
+========================= */
+
+.card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-large);
+  padding: var(--panel-padding);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+  margin-bottom: 16px;
+}
+
+.challenge strong {
+  color: var(--highlight-primary);
+}
+
+.task ol {
+  margin: 8px 0 0 20px;
+}
+
+/* =========================
+   EDITOR + OUTPUT
+========================= */
+
+#editor,
+#output {
+  width: 100%;
+  background: #000;
+  color: var(--text-accent);
+  border-radius: var(--radius-small);
+  border: 1px solid #2a2a2a;
+  font-family: var(--font-mono);
+}
+
+#editor {
+  height: 200px;
+  padding: 10px;
+}
+
+#output {
+  height: 150px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: var(--radius-small);
+  border: 1px solid #2a2a2a;
+  background: linear-gradient(180deg, #222, #111);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================
+   STAMP / BADGE
+========================= */
+
+.stamp {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 8px;
+  border: 1px dashed var(--highlight-secondary);
+  color: var(--highlight-secondary);
+  border-radius: 8px;
+  font-size: 12px;
+  letter-spacing: .04em;
+}
+
+#theme-image {
+  content: var(--theme-image);
+}
+
+#theme-main::before {
+  content: var(--theme-main);
+}
+
+#theme-sub::before {
+  content: var(--theme-sub);
+  color: var(--theme-sub-color);
+}
+
+#theme-tagline::before {
+  content: var(--theme-tagline);
+}
+
+/* ANIMATION CONTAINER */
+#animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Allow clicks through animation */
+  overflow: hidden;
+  z-index: 0; /* Behind content */
+}
