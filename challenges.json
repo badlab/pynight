@@ -16,6 +16,7 @@
     "test_code": "output = py_night(film_script)\noutput",
     "expected": "assets/diehard_grinch_transcript.txt",
 	"required_terms": [],
+	"forbidden_terms": [],
     "flag": "PY_NIGHT{DIE_HARD_SCROOGE}"
   },
   {
@@ -38,5 +39,6 @@
     "flag": "PY_NIGHT{RED_CASTLE}"
   }
 ]
+
 
 
