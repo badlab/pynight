@@ -52,11 +52,12 @@
   "setup_code": "",
   "test_code": "output = py_night()\noutput",
   "expected": "true",
-  "required_terms": ["value = 7", "elif value", "elif 18", "while value", "result = True", "5", "3", "44", "return False", "18"],
+  "required_terms": ["value = 7", "elif value", "while value", "result = True", "5", "3", "44", "return False", "18", "return result"],
   "forbidden_terms": ["return True", "return true"],
   "flag": "PY_NIGHT{THEO_IS_A_LOCKSMITH}"
   }
 ]
+
 
 
 
