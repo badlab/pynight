@@ -15,8 +15,8 @@
     "setup_code": "film_script = \"assets/diehard_transcript.txt\"\nxmas_words = ['Christmas', 'Xmas', 'Ebenezer Scrooge', 'Santa', 'Rudolph', 'Reindeer', 'Snow', 'Ode to Joy', 'Jingle Bells']",
     "test_code": "output = py_night(film_script)\noutput",
     "expected": "assets/diehard_grinch_transcript.txt",
-	"required_terms": [],
-	"forbidden_terms": [],
+    "required_terms": [],
+    "forbidden_terms": [],
     "flag": "PY_NIGHT{DIE_HARD_SCROOGE}"
   },
   {
@@ -34,8 +34,8 @@
     "setup_code": "",
     "test_code": "output = py_night()\noutput",
     "expected": "akagi",
-	"required_terms": [],
-	"forbidden_terms": ["akagi", "Akagi"],
+    "required_terms": [],
+    "forbidden_terms": ["akagi", "Akagi"],
     "flag": "PY_NIGHT{RED_CASTLE}"
   },
   {
@@ -57,4 +57,3 @@
     "flag": "PY_NIGHT{THEO_IS_A_LOCKSMITH}"
   }
 ]
-
