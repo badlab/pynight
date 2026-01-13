@@ -27,7 +27,7 @@ async function loadChallenge() {
     const res = await fetch("challenges.json");
     challenges = await res.json();
   } catch (e) {
-    document.body.innerHTML = "<h2 style='color:red'>❌ TEST Failed to load challenges.json</h2>";
+    document.body.innerHTML = "<h2 style='color:red'>❌ Failed to load challenges.json</h2>";
     return;
   }
 
