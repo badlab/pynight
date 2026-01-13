@@ -1,22 +1,22 @@
 [
-  {
-    "id": "newb_001",
-    "template": "unthemed",
-    "challenge_description": "Write your first program, as is tradition.",
-    "challenge_stamp": "",
+   {
+    "id": "diehard_001",
+    "template": "diehard",
+    "challenge_description": "Remove all Christmas-related words from the film transcript.",
+    "challenge_stamp": "Nakatomi Corporation",
     "tasks": [
-      "Enter the python code to display",
-      "Hello World",
-      "to the console.",
-      "",
+      "The entire film transcript is stored in film_script.",
+      "A list of festive words and phrases appears in xmas_words.",
+      "Remove all festive words from the transcript.",
+      "If correct, the passphrase will be shown."
     ],
-    "example": "",
-    "starter_code": "def py_night():\n    # Your code here\n\n\n\n    # Don't edit beyond this point!\n    return film_script",
-    "setup_code": "",
-    "test_code": "",
-    "expected": "print('Hello World')",
+    "example": "xmas_words = ['Christmas', 'Xmas', 'Ebenezer Scrooge', 'Santa', 'Rudolph', 'Reindeer', 'Snow', 'Ode to Joy', 'Jingle Bells']",
+    "starter_code": "def py_night(film_script):\n    # Your code here\n\n\n\n    # Don't edit beyond this point!\n    return film_script",
+    "setup_code": "film_script = \"assets/diehard_transcript.txt\"\nxmas_words = ['Christmas', 'Xmas', 'Ebenezer Scrooge', 'Santa', 'Rudolph', 'Reindeer', 'Snow', 'Ode to Joy', 'Jingle Bells']",
+    "test_code": "output = py_night(film_script)\noutput",
+    "expected": "assets/diehard_grinch_transcript.txt",
 	"required_terms": [],
 	"forbidden_terms": [],
-    "flag": "PY_NIGHT{HELLO_WORLD}"
-  }
-
+    "flag": "PY_NIGHT{DIE_HARD_SCROOGE}"
+  },
+]
