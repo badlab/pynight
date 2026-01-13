@@ -6,11 +6,7 @@
     "challenge_stamp": "",
     "tasks": [
       "Enter the python code to display",
-      "<code>
-      <pre>
-      Hello World
-      </pre>
-      </code>",
+      "Hello World",
       "to the console.",
       "",
     ],
@@ -23,4 +19,4 @@
 	"forbidden_terms": [],
     "flag": "PY_NIGHT{HELLO_WORLD}"
   }
-]
+
