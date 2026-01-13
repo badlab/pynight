@@ -5,10 +5,21 @@
     "challenge_description": "Remove all Christmas-related words from the film transcript.",
     "challenge_stamp": "Nakatomi Corporation",
     "tasks": [
+<<<<<<< HEAD
       "The entire film transcript is stored in film_script.",
       "A list of festive words and phrases appears in xmas_words.",
       "Remove all festive words from the transcript.",
       "If correct, the passphrase will be shown."
+=======
+      "Enter the python code to display",
+      "<code>
+      <pre>
+      Hello World
+      </pre>
+      </code>",
+      "to the console.",
+      "",
+>>>>>>> parent of 866383b (changed some text)
     ],
     "example": "xmas_words = ['Christmas', 'Xmas', 'Ebenezer Scrooge', 'Santa', 'Rudolph', 'Reindeer', 'Snow', 'Ode to Joy', 'Jingle Bells']",
     "starter_code": "def py_night(film_script):\n    # Your code here\n\n\n\n    # Don't edit beyond this point!\n    return film_script",
@@ -17,6 +28,11 @@
     "expected": "assets/diehard_grinch_transcript.txt",
 	"required_terms": [],
 	"forbidden_terms": [],
+<<<<<<< HEAD
     "flag": "PY_NIGHT{DIE_HARD_SCROOGE}"
   },
+=======
+    "flag": "PY_NIGHT{HELLO_WORLD}"
+  }
+>>>>>>> parent of 866383b (changed some text)
 ]
