@@ -12,7 +12,7 @@
       </pre>
       </code>",
       "to the console.",
-      ""
+      "",
     ],
     "example": "",
     "starter_code": "def py_night():\n    # Your code here\n\n\n\n    # Don't edit beyond this point!\n    return film_script",
@@ -22,5 +22,5 @@
 	"required_terms": [],
 	"forbidden_terms": [],
     "flag": "PY_NIGHT{HELLO_WORLD}"
-  },
+  }
 ]
