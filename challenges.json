@@ -20,6 +20,43 @@
     "flag": "PY_NIGHT{DIE_HARD_SCROOGE}"
   },
   {
+    "id": "diehard_002",
+    "template": "diehard",
+    "challenge_description": "Break into the Nakatomi Vault, first lock: Create a password-input terminal!",
+    "challenge_stamp": "Nakatomi Corporation",
+    "tasks": [
+      "A notorious scene in Die Hard is the scene where Theo is cracking the password to the Nakatomi Vault",
+      "Your challenge is simple, use python to enable user-input of a password, and enter the Nakatomi Vault Password",
+      "Feel free to google what that password is... but real fans already know it. ;P"
+    ],
+    "example": "",
+    "starter_code": "def py_night():\n    # Your code here\n\n\n\n    # Don't edit beyond this point!\n    return password",
+    "setup_code": "",
+    "test_code": "output = py_night()\noutput",
+    "expected": "akagi",
+	"required_terms": [],
+	"forbidden_terms": ["akagi", "Akagi"],
+    "flag": "PY_NIGHT{RED_CASTLE}"
+  },
+  {
+  "id": "diehard_003",
+  "template": "diehard",
+  "challenge_description": "Nakatomi Vault features five mechanical locks, in the film, Theo brute-forced his way through them, now you should try to do the same.",
+  "challenge_stamp": "Nakatomi Corporation",
+  "tasks": [
+    "Below is a python script with five conditional statements, your goal is to modify each statement so that all checks return true.",
+    "The trick is you cannot change anything in the script EXCEPT the conditional comparison logics. (The '= < > !' logical comparisons.)"
+  ],
+  "example": "",
+  "starter_code": "def py_night():\n    # Your code here\n    value = 7\n    if value < 5:\n        return False\n    elif value == 7:\n        return False\n    elif value != 3 or 44 > 7:\n        return False\n    elif 18 < 7 and value != \"7\":\n        return False\n    while value >= 7 or value <= 7:\n        return False\n    result = True\n\n    # Don't edit beyond this point!\n    return result",
+  "setup_code": "",
+  "test_code": "output = py_night()\noutput",
+  "expected": "true",
+  "required_terms": ["value = 7", "elif value", "elif 18", "while value", "result = True", "5", "3", "44", "return False", "18"],
+  "forbidden_terms": ["return True"],
+  "flag": "PY_NIGHT{THEO_IS_A_LOCKSMITH}"
+  },
+  {
     "id": "diehard_004",
     "template": "diehard",
     "challenge_description": "Remove all Christmas-related words from the film transcript.",
