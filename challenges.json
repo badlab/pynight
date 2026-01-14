@@ -17,7 +17,6 @@
     "expected": "assets/diehard_grinch_transcript.txt",
 	"required_terms": [],
 	"forbidden_terms": [],
-<<<<<<< HEAD
-    "flag": "PY_NIGHT{DIE_HARD_SCROOGE}"
+  "flag": "PY_NIGHT{DIE_HARD_SCROOGE}"
   },
 ]
